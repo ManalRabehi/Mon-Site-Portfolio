@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <title>Mon Portfolio</title>
+        <link rel="icon" href="images/logo_window.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6518d92058.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- FIRST: Header Section-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo_portfolio.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Accueil</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#experience">Expériences</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Manal <span>Rabehi</span></h1>
+                    <p>Étudiante | Développeuse Logiciel</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header Section-->
+<!-- Second: Section à propos de moi -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about_me.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">À Propos de Moi</h1>
+                        <p>Étudiante en mathématiques appliquées et informatique à 
+                            Toulouse, passionnée par la technologie et la résolution 
+                            de problèmes. Curieuse et ambitieuse, j’aime allier 
+                            expertise technique et créativité pour concevoir des solutions
+                            innovantes mêlant informatique, data science et culture. 
+                            Avec un regard analytique et un sens de l’esthétique, 
+                            je vise à créer un impact à travers chacun de mes projets.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('education')">Éducation</p>
+                                <p class="tab-links" onclick="opentab('skills')">Compétences</p>
+                            </div>
+                            <!-- éducation-->
+                            <div class="tab-contents active-tab" id="education">
+                                <ul>
+                                    <li><span>2023 - En cours</span><br>Université de Toulouse 2 - Jean Jaurès<br>Licence Mathématiques et informatique Appliquées aux Sciences Humaines et Sociales - Parcours Informatique</li>
+                                    <li><span>2023</span><br>Lycée Benchenouf Thamer, Alger<br>Baccalauréat Sciences Expérimentales mention Bien</li>
+                                </ul>
+                            </div>
+                            <!-- compétences-->
+                            <div class="tab-contents" id="skills">
+                                <ul>
+                                    <li><span>Langages de Programamtion</span><br>Python, JAVA, JavaScript, GOLang, PHP, R, SQL</li>
+                                    <li><span>Développement Web</span><br>Conception et développement d'applications avec HTML, CSS, JavaScript</li>
+                                    <li><span>Bases de Données</span><br>Gestion et manipulation de bases de données (SQL, MySQL, SQLite, MariaDB)</li>
+                                    <li><span>Analyse Statistique</span><br>Analyse et visualisation de données (R, Python, Pandas)</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of About Section-->
+         <!--THIRD: Projects Section-->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Mes Projets</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-house-user"></i>
+                        <h2>Système de domotique avec Tkinter</h2>
+                        <p>Conception et développement d'une interface interactive de domotique, 
+                            pour la gestion de l'éclairage et la température d'une maison
+                        </p>                            
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Application open-source avec l'API de Tisséo</h2>
+                        <p>Application web open-source utilisant l’API 
+                            de Tisséo pour faciliter l’accès aux horaires, 
+                            itinéraires et informations en temps réel des 
+                            transports en commun de Toulouse.
+                        </p>                            
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Projet d'analyse statistique sur les incendies</h2>
+                        <p>Conception et développement d'une interface interactive de domotique, 
+                            pour la gestion de l'éclairage et la température d'une maison
+                        </p>                            
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-building"></i>
+                        <h2>Application pour la lutte contre le sexisme dans les entreprises (En cours...)</h2>
+                        <p>Conception et développement d'une application web 
+                            visant à sensibiliser, signaler et accompagner 
+                            les actions contre le sexisme en milieu professionnel, durant un hackathon à Paris
+                        </p>                            
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <h2>Parcours REVE de communication entre le CROUS et les associations étudiantes</h2>
+                        <p>Conception d’une stratégie innovante visant à renforcer 
+                            la communication entre le CROUS et les associations étudiantes lors d'un hackathon
+                            organisé par le Crous, proposant un parcours annuel autour de thématiques mensuelles, 
+                            ponctué par un grand événement régional : le DREAM FEST. 
+                        </p>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Projects Section -->
+        <!-- Fourth: Experiences Section -->
+        <div id="experience">
+            <div class="container">
+                <h1 class="sub-title">Mes Expériences</h1>
+                <div class="experience-list">
+                    <div class="experience">
+                        <img src="images/exp_1_crous.jpg">
+                        <div class="layer">
+                            <h3>Hackathon du CROUS de Toulouse-Occitanie<br>
+                            Février 2025</h3>
+                            <p>Février dernier, j'ai participé à un hackathon
+                                organisé par le CROUS de Toulouse-Occitanie autours 
+                                de la thématique de la communication. En équipe pluridisciplinaire,
+                                nous avons conçu le Parcours REVE (Réseau, Engagement, Vie Étudiante),
+                                un programme innovant destiné à renforcer durablement
+                                les liens entre le CROUS et les associations étudiantes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="images/exp_2_paris.jpg">
+                        <div class="layer">
+                            <h3>Hackathon pour la Lutte contre le Sexisme à Paris<br>
+                            Janvier 2025</h3>
+                            <p>Participation (et victoire!) à un hackathon 
+                            organisé autour du thème de la lutte contre le sexisme en milleu 
+                            professionnel. En équipe, nous avons développé une application
+                            innovante (qui est toujours en cours d'amélioration) destinée à sensibiliser, détecter
+                            et agir contre les comportements sexistes dans les entreprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Experiences Section -->
+        <!-- Fifth: Hobbies section -->
+        <div id="hobbies">
+            <div class="container">
+                <h1 class="sub-title">Mes Hobbies</h1>
+                <div class="hobbies-list">
+                    <!-- hobby 1-->
+                    <div class="hobby">
+                        <img src="images/hobby1.png"">
+                        <div class="desc">
+                            <h3>Peinture</h3>
+                            <a href="https://www.instagram.com/artandscorpio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <!-- hobby 2-->
+                    <div class="hobby">
+                        <img src="images/hobby2.jpg">
+                        <div class="desc">
+                            <h3>Photographie</h3>
+                        </div>
+                    </div>
+                    <!-- hobby 3-->
+                    <div class="hobby">
+                        <img src="images/hobby3.jpg">
+                        <div class="desc">
+                            <h3>Lecture</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Hobbies Section-->
+        <!-- Last: Contact Section -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Me Contacter</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> rabehi.manal.pro@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +33 7 44 40 53 96</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/ManalRabehi"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/manal-rabehi-45758b288/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/CV RABEHI Manal.pdf" download class="btn">Télécharger Mon CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Nom" placeholder="Votre Nom" required>
+                            <input type="text" name="Email" placeholder="Votre Email" required>
+                            <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                            <button type="submit" class="btn btn2">Envoyer</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-solid fa-heart"></i> Copyright &copy Manal Rabehi. <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- script for the opentab function in the About section -->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <!-- script to make the website responsive-->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>     
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzLGEQFpqfhc2p0mdiDGsp0-_JLR6ohaZPBBcq4gPBet8Z-9QEgElnF5LLYjiX6YgW5AA/exec'
+            const form = document.forms["submit-to-google-sheet"]
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Envoyé avec Succès"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>  
+    </body>
+</html>
